@@ -4,7 +4,7 @@
  */
 
 export default {
-  roots: ['<rootDir>/src]'],
+  roots: ['<rootDir>/src'],
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 

@@ -1,5 +1,5 @@
 export class SignUpController {
   handle (httpRequest: any): any {
-    return { statusCode: 200 }
+    return { statusCode: 400 }
   }
 }

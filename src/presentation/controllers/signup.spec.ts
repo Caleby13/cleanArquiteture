@@ -19,9 +19,7 @@ describe('Sign Up Controller', () => {
     expect(httpResponse.statusCode).toBe(400)
     expect(httpResponse.body).toEqual(new MissingParamError('name'))
   })
-})
 
-describe('Sign Up Controller', () => {
   test('Should reutnr 400 if no name is provided ', () => {
     const sut = makeSut()
     const httpRequest = {
@@ -35,9 +33,7 @@ describe('Sign Up Controller', () => {
     expect(httpResponse.statusCode).toBe(400)
     expect(httpResponse.body).toEqual(new MissingParamError('email'))
   })
-})
 
-describe('Sign Up Controller', () => {
   test('Should reutnr 400 if no password is provided ', () => {
     const sut = makeSut()
     const httpRequest = {
@@ -51,9 +47,7 @@ describe('Sign Up Controller', () => {
     expect(httpResponse.statusCode).toBe(400)
     expect(httpResponse.body).toEqual(new MissingParamError('password'))
   })
-})
 
-describe('Sign Up Controller', () => {
   test('Should reutnr 400 if no passwordConfirmation is provided ', () => {
     const sut = makeSut()
     const httpRequest = {
@@ -67,9 +61,7 @@ describe('Sign Up Controller', () => {
     expect(httpResponse.statusCode).toBe(400)
     expect(httpResponse.body).toEqual(new MissingParamError('passwordConfirmation'))
   })
-})
 
-describe('Sign Up Controller', () => {
   test('Should reutnr 200 if sucess', () => {
     const sut = makeSut()
     const httpRequest = {
